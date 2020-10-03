@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Tools;
 using UnityEngine;
 
@@ -16,12 +17,16 @@ namespace LD47
         {
             Instruction current = GetCurrentInstruction();
 
+            if (current == null) return;
+
             if (current.requiredAction == action)
             {
                 current.complectionAction?.Execute();
             }
 
-            NextInstruction();
+            _currentInstructionIndex++;
+
+            EventManager.Instance.Trigger(GameplayEvent.InstructionCompleted);
         }
 
         public override void Initialize()
@@ -36,21 +41,12 @@ namespace LD47
 
         public Instruction GetCurrentInstruction()
         {
-            return _instructions[_currentInstructionIndex];
-        }
-
-        public int GetCurrentIndex()
-        {
-            return _currentInstructionIndex;
-        }
-
-        private void NextInstruction()
-        {
-            if (_currentInstructionIndex < _instructions.Count - 1)
+            if (_currentInstructionIndex >= _instructions.Count)
             {
-                _currentInstructionIndex++;
-                EventManager.Instance.Trigger(GameplayEvent.InstructionCompleted);
+                return null;
             }
+
+            return _instructions[_currentInstructionIndex];
         }
     } 
 }
