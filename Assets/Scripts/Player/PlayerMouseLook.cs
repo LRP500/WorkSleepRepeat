@@ -2,7 +2,7 @@
 
 namespace LD47
 {
-    public class MouseLook : MonoBehaviour
+    public class PlayerMouseLook : MonoBehaviour
     {
         [SerializeField]
         private float _sensitivity = 50f;
