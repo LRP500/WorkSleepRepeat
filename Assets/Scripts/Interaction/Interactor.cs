@@ -7,10 +7,23 @@ namespace LD47
         [SerializeField]
         private LayerMask _layerMask = default;
 
-        public void TryInteract()
+        [SerializeField]
+        private bool _canInteract = true;
+
+        [SerializeField]
+        private InteractionUI _feedbackUI = null;
+
+        private Interactable _hovered;
+
+        private void Update()
+        {
+            _hovered = GetInteractable();
+            _feedbackUI.SetInteractable(_hovered);
+        }
+
+        private Interactable GetInteractable()
         {
             Ray ray = new Ray(transform.position, transform.forward);
-
             if (Physics.Raycast(ray, out RaycastHit hit, 10, _layerMask))
             {
                 Interactable interactable = hit.collider.GetComponent<Interactable>();
@@ -18,8 +31,18 @@ namespace LD47
                 float distance = Vector3.Distance(interactable.transform.position, transform.position);
                 if (distance <= interactable.Range)
                 {
-                    interactable.Interact();
+                    return interactable;
                 }
+            }
+
+            return null;
+        }
+
+        public void TryInteract()
+        {
+            if (_hovered != null && _canInteract)
+            {
+                _hovered.Interact();
             }
         }
     }

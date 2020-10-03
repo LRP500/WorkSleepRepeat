@@ -386,6 +386,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4600185973218736834, guid: 4034c0dc2cf161547b2cb1d9fe0c549e,
+        type: 3}
+      propertyPath: _label
+      value: Sleep
+      objectReference: {fileID: 0}
     - target: {fileID: 4600185973218736839, guid: 4034c0dc2cf161547b2cb1d9fe0c549e,
         type: 3}
       propertyPath: m_Name
