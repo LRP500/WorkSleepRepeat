@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using TMPro;
 using Tools;
 using UnityEngine;
 
@@ -10,12 +10,7 @@ namespace LD47
         private InstructionManager _instructionManager = null;
 
         [SerializeField]
-        private InstructionUI _instructionPrefab = null;
-
-        [SerializeField]
-        private Transform _instructionContainer = null;
-
-        private List<InstructionUI> _instructions = null;
+        private TextMeshProUGUI _instructionText = null;
 
         private void Awake()
         {
@@ -39,27 +34,7 @@ namespace LD47
 
         public void Refresh()
         {
-            Clear();
-
-            var instructions = _instructionManager.GetInstructions();
-            for (int i = 0, length = instructions.Count; i < length; i++)
-            {
-                InstructionUI instance = Instantiate(_instructionPrefab, _instructionContainer);
-                instance.SetInstruction(instructions[i], i + 1, i == _instructionManager.GetCurrentIndex());
-                _instructions.Add(instance);
-            }
-        }
-
-        private void Clear()
-        {
-            _instructions = _instructions ?? new List<InstructionUI>();
-
-            foreach (InstructionUI item in _instructions)
-            {
-                Destroy(item.gameObject);
-            }
-
-            _instructions.Clear();
+            _instructionText.text = _instructionManager.GetCurrentInstruction().description;
         }
     }
 }
