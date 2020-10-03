@@ -30,7 +30,7 @@ namespace LD47
 
             // Vertical rotation
             _rotationX -= mouseY;
-            _rotationX = Mathf.Clamp(_rotationX, -90f, 90f);
+            _rotationX = Mathf.Clamp(_rotationX, -85f, 85f);
             _playerHead.localRotation = Quaternion.Euler(_rotationX, 0f, 0f);
 
             // Horizontal rotation
