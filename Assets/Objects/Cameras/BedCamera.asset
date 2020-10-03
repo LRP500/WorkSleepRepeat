@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 141db66ddf74ab641884b87dc9c734b6, type: 3}
-  m_Name: Instruction_Work
+  m_Script: {fileID: 11500000, guid: 54f1c815d61022d4ca9754f71fa9e57b, type: 3}
+  m_Name: BedCamera
   m_EditorClassIdentifier: 
-  description: Work
-  requiredAction: {fileID: 11400000, guid: 2a6b449d396846c4188c8459346436eb, type: 2}
-  completionAction: {fileID: 0}
+  _value: {fileID: 0}

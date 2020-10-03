@@ -15,5 +15,13 @@ namespace LD47
                 manager.Initialize();
             }
         }
+
+        private void OnDestroy()
+        {
+            foreach (var manager in _managers)
+            {
+                manager.Clear();
+            }
+        }
     }
 }

@@ -315,6 +315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4937172290345416194}
   - component: {fileID: 61195601}
+  - component: {fileID: 166968380327394312}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -350,3 +351,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactor: {fileID: 0}
+--- !u!114 &166968380327394312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4937172290345416195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246efa0bd38a8364d92765415d98993a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 45907476}
+  _playerBody: {fileID: 391797256}
+  _runtimeReference: {fileID: 11400000, guid: d695787df0d86aa41ac301a0397a0656, type: 2}
+  _cameraManager: {fileID: 11400000, guid: bb3736274194f2a4fb54bf4427c4717d, type: 2}

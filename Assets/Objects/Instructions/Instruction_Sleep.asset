@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Instruction_Sleep
   m_EditorClassIdentifier: 
   description: Sleep
-  action: {fileID: 11400000, guid: 932ce1ba417d30d46b6bac4f84d5dfa5, type: 2}
+  requiredAction: {fileID: 11400000, guid: 932ce1ba417d30d46b6bac4f84d5dfa5, type: 2}
+  completionAction: {fileID: 0}

@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Tools;
 using UnityEngine;
 
 namespace LD47
 {
-    [CreateAssetMenu(menuName = "Managers/Instruction Manager")]
+    [CreateAssetMenu(menuName = "LD47/Managers/Instruction Manager")]
     public class InstructionManager : ScriptableManager
     {
         [SerializeField]
@@ -13,25 +12,37 @@ namespace LD47
 
         private int _currentInstructionIndex = 0;
 
-        public void Validate(InstructionAction action)
-        {
-            Instruction current = GetCurrentInstruction();
-
-            if (current == null) return;
-
-            if (current.requiredAction == action)
-            {
-                current.complectionAction?.Execute();
-            }
-
-            _currentInstructionIndex++;
-
-            EventManager.Instance.Trigger(GameplayEvent.InstructionCompleted);
-        }
-
         public override void Initialize()
         {
             _currentInstructionIndex = 0;
+        }
+
+        public bool Validate(InstructionAction action)
+        {
+            Instruction current = GetCurrentInstruction();
+
+            // Invalid action
+            if (current == null)
+            {
+                return false;
+            }
+
+            // Incorrect instruction
+            if (current.requiredAction != action)
+            {
+                return false;
+            }
+
+            // Execute action
+            current.completionAction?.Execute();
+
+            // Go to next action
+            _currentInstructionIndex++;
+
+            // Notifiy listeners (UI)
+            EventManager.Instance.Trigger(GameplayEvent.InstructionCompleted);
+
+            return true;
         }
 
         public List<Instruction> GetInstructions()
