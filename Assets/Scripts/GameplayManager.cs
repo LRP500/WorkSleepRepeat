@@ -8,7 +8,7 @@ namespace LD47
     public class GameplayManager : Singleton<GameplayManager>
     {
         [SerializeField]
-        private List<ScriptableManager> _managers = null;
+        private InstructionManager _instructionManager = null;
 
         [SerializeField]
         private CameraManager _cameraManager = null;
@@ -23,23 +23,16 @@ namespace LD47
 
         private void Awake()
         {
-            foreach (var manager in _managers)
-            {
-                manager.Initialize();
-            }
-        }
+            _instructionManager.Initialize();
+            _cameraManager.Initialize();
 
-        private void Start()
-        {
             CreatePlayer();
         }
 
         private void OnDestroy()
         {
-            foreach (var manager in _managers)
-            {
-                manager.Clear();
-            }
+            _instructionManager.Clear();
+            _cameraManager.Clear();
         }
 
         public IEnumerator EndScene()
@@ -49,7 +42,7 @@ namespace LD47
             Destroy(_player.gameObject);
             CreatePlayer();
 
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1f);
             yield return _sceneFader.FadeIn();
         }
 

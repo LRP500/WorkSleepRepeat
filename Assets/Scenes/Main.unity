@@ -1531,9 +1531,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f8239116e40cda449f8c20d294e01cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _managers:
-  - {fileID: 11400000, guid: 140e1e663ba81ad4aaa065e526f27f51, type: 2}
-  - {fileID: 11400000, guid: bb3736274194f2a4fb54bf4427c4717d, type: 2}
+  _instructionManager: {fileID: 11400000, guid: 140e1e663ba81ad4aaa065e526f27f51,
+    type: 2}
   _cameraManager: {fileID: 11400000, guid: bb3736274194f2a4fb54bf4427c4717d, type: 2}
   _playerPrefab: {fileID: 166968380327394312, guid: d54a0498e85be334c8438ce6788f088b,
     type: 3}
