@@ -16,4 +16,4 @@ MonoBehaviour:
     type: 2}
   _cameraManager: {fileID: 11400000, guid: bb3736274194f2a4fb54bf4427c4717d, type: 2}
   _transitionTo: {fileID: 11400000, guid: 2b824cbf9f574d245ad52b7022199123, type: 2}
-  _duration: 5
+  _duration: 2

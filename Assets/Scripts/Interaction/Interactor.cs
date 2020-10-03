@@ -2,6 +2,7 @@
 
 namespace LD47
 {
+    [RequireComponent(typeof(Camera))]
     public class Interactor : MonoBehaviour
     {
         [SerializeField]

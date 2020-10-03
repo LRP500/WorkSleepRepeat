@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Tools.Variables;
+using UnityEngine;
 
 namespace LD47
 {
@@ -7,13 +8,13 @@ namespace LD47
         public static readonly KeyCode interactKey = KeyCode.E;
 
         [SerializeField]
-        private Interactor _interactor = null;
+        private CameraVariable _mainCamera = null;
 
         private void Update()
         {
             if (Input.GetKeyDown(interactKey))
             {
-                _interactor.TryInteract();
+                _mainCamera.Value.GetComponent<Interactor>().TryInteract();
             }
         }
     }
