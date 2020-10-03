@@ -1462,11 +1462,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6707501836566836000, guid: b5c48361f319fcf48b28cd0112924e39,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5c48361f319fcf48b28cd0112924e39, type: 3}
 --- !u!1001 &4937172290385572691
@@ -1476,34 +1471,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 45907475, guid: d54a0498e85be334c8438ce6788f088b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 45907475, guid: d54a0498e85be334c8438ce6788f088b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 45907475, guid: d54a0498e85be334c8438ce6788f088b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 45907475, guid: d54a0498e85be334c8438ce6788f088b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 45907475, guid: d54a0498e85be334c8438ce6788f088b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 45907476, guid: d54a0498e85be334c8438ce6788f088b, type: 3}
-      propertyPath: m_Lens.FieldOfView
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 415368359, guid: d54a0498e85be334c8438ce6788f088b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 4937172290345416194, guid: d54a0498e85be334c8438ce6788f088b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1563,11 +1530,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7656992061013577912, guid: d54a0498e85be334c8438ce6788f088b,
-        type: 3}
-      propertyPath: m_Height
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d54a0498e85be334c8438ce6788f088b, type: 3}
