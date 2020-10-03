@@ -9,10 +9,10 @@ namespace LD47
         private CanvasGroup _canvasGroup = null;
 
         [SerializeField]
-        private TextMeshProUGUI _key;
+        private TextMeshProUGUI _key = null;
 
         [SerializeField]
-        private TextMeshProUGUI _label;
+        private TextMeshProUGUI _label = null;
 
         public void SetInteractable(Interactable interactable)
         {

@@ -15,10 +15,14 @@ namespace LD47
         [SerializeField]
         private bool _canBeInteractedWith = true;
 
+        [SerializeField]
+        private Action _action = null;
+
         public void Interact()
         {
             if (_canBeInteractedWith)
             {
+                _action.Execute();
             }
         }
     }
