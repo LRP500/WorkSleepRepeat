@@ -135,7 +135,7 @@ Material:
     m_Floats:
     - PixelSnap: 0
     - Vector1_943666C3: 1.4
-    - Vector1_C3D551B7: 0.1
+    - Vector1_C3D551B7: 0.25
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 0.5
