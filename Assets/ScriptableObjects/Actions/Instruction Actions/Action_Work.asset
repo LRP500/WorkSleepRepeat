@@ -16,4 +16,6 @@ MonoBehaviour:
     type: 2}
   _cameraManager: {fileID: 11400000, guid: bb3736274194f2a4fb54bf4427c4717d, type: 2}
   _transitionTo: {fileID: 11400000, guid: be632f8bcf34bd5418327a35efd59ed1, type: 2}
-  _duration: 5
+  _duration: 8
+  _audioEvent: {fileID: 11400000, guid: 74b3e6ccc9681c84eaa3416ead2cc96d, type: 2}
+  _audioSource: {fileID: 11400000, guid: a3764e1ab788a004b9cb8367b12ea726, type: 2}
