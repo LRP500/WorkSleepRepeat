@@ -9,6 +9,8 @@ namespace LD47
 
         UI_PlayerStats,
 
-        ENV_Counter
+        ENV_Counter,
+
+        INT_Quit
     }
 }
