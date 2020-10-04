@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace LD47
@@ -16,14 +17,28 @@ namespace LD47
             public bool enabled; 
         }
 
-        public bool enableCounter = false;
-        public bool enableCameraFeeds = false;
+        [Serializable]
+        public struct StateConfiguration
+        {
+            public ConfigurableID ID;
+            public bool enabled;
+        }
 
-        public bool displayStats = true;
         public StatConfiguration hunger;
         public StatConfiguration thirst;
         public StatConfiguration happiness;
 
+        public List<StateConfiguration> state = null;
         public List<Instruction> instructions = null;
+
+        public bool Contains(ConfigurableID ID)
+        {
+            return state.Any(x => x.ID == ID);
+        }
+
+        public bool GetState(ConfigurableID ID)
+        {
+            return state.First(x => x.ID == ID).enabled;
+        }
     }
 }

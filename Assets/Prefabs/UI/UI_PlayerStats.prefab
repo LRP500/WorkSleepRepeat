@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b893f19669464790fca6036cc30c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _canvasGroup: {fileID: 2069666259}
+  _ID: 2
   _hunger: {fileID: 8565235858346491577}
   _thirst: {fileID: 6869686533030300960}
   _happiness: {fileID: 6869686533665415159}

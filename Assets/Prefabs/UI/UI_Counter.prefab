@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fb7b6cc8972214fa85194ddc06e17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _canvasGroup: {fileID: 7942942063984755031}
+  _ID: 3
   _counter: {fileID: 3559730410112896503}
   _value: {fileID: 11400000, guid: b77af39ada403434d971aaf3762a94e1, type: 2}
 --- !u!225 &7942942063984755031
