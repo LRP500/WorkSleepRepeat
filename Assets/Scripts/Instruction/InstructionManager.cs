@@ -7,14 +7,20 @@ namespace LD47
     [CreateAssetMenu(menuName = "LD47/Managers/Instruction Manager")]
     public class InstructionManager : ScriptableManager
     {
-        [SerializeField]
         private List<Instruction> _instructions = null;
 
         private int _currentInstructionIndex = 0;
 
         public override void Initialize()
         {
+        }
+
+        public void Refresh(Configuration configuration)
+        {
             _currentInstructionIndex = 0;
+            _instructions = configuration.instructions;
+
+            EventManager.Instance.Trigger(GameplayEvent.InstructionsUpdated);
         }
 
         public bool Validate(InstructionAction action)
@@ -40,7 +46,7 @@ namespace LD47
             _currentInstructionIndex++;
 
             // Notifiy listeners (UI)
-            EventManager.Instance.Trigger(GameplayEvent.InstructionCompleted);
+            EventManager.Instance.Trigger(GameplayEvent.InstructionsUpdated);
 
             return true;
         }

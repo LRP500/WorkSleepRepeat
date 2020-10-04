@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace LD47
 {
-    public class RunCounterUI : MonoBehaviour
+    public class RunCounterUI : Configurable
     {
         [SerializeField]
         private CanvasGroup _canvasGroup = null;
@@ -20,12 +20,6 @@ namespace LD47
             _value.Subscribe(Refresh);
         }
 
-        private void Start()
-        {
-            Refresh();
-            Show();
-        }
-
         private void OnDestroy()
         {
             _value.Unsubscribe(Refresh);
@@ -36,14 +30,9 @@ namespace LD47
             _counter.text = $"#{_value.Value.ToString("0000")}";
         }
 
-        public void Show()
+        public override void Configure(Configuration configuration)
         {
-            _canvasGroup.alpha = 1;
-        }
-
-        public void Hide()
-        {
-            _canvasGroup.alpha = 0;
+            _canvasGroup.alpha = configuration.enableCounter ? 1 : 0;
         }
     }
 }

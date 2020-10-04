@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using Tools;
 using UnityEngine;
 
@@ -7,6 +6,9 @@ namespace LD47
 {
     public class GameplayManager : Singleton<GameplayManager>
     {
+        [SerializeField]
+        private ConfigurationManager _configurationManager = null;
+
         [SerializeField]
         private InstructionManager _instructionManager = null;
 
@@ -23,10 +25,14 @@ namespace LD47
 
         private void Awake()
         {
+            _configurationManager.Initialize();
             _instructionManager.Initialize();
             _cameraManager.Initialize();
+        }
 
-            CreatePlayer();
+        private void Start()
+        {
+            PrepareScene();
         }
 
         private void OnDestroy()
@@ -35,20 +41,36 @@ namespace LD47
             _cameraManager.Clear();
         }
 
+        private void CreatePlayer()
+        {
+            _player = Instantiate(_playerPrefab);
+        }
+
         public IEnumerator EndScene()
         {
             yield return _sceneFader.FadeOut();
 
-            Destroy(_player.gameObject);
-            CreatePlayer();
+            CleanScene();
+
+            _configurationManager.Increment();
+
+            PrepareScene();
 
             yield return new WaitForSeconds(1f);
             yield return _sceneFader.FadeIn();
         }
 
-        private void CreatePlayer()
+        public void CleanScene()
         {
-            _player = Instantiate(_playerPrefab);
+            Destroy(_player.gameObject);
+        }
+
+        public void PrepareScene()
+        {
+            CreatePlayer();
+
+            _instructionManager.Refresh(_configurationManager.GetCurrent());
+            _configurationManager.Run();
         }
     }
 }

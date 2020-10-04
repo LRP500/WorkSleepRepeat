@@ -1,5 +1,5 @@
 ﻿
 public static class GameplayEvent
 {
-    public static readonly string InstructionCompleted = "GameplayEvent_InstructionCompleted";
+    public static readonly string InstructionsUpdated = "GameplayEvent_InstructionCompleted";
 }
