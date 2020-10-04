@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 552a8a2af4d7ae741a28a6c64085a9ba, type: 3}
   m_Name: Configuration_01_Intro
   m_EditorClassIdentifier: 
+  subjectID: 27
   hunger:
     value: 80
     enabled: 0

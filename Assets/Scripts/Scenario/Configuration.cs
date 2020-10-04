@@ -24,6 +24,8 @@ namespace LD47
             public bool enabled;
         }
 
+        public int subjectID;
+
         public StatConfiguration hunger;
         public StatConfiguration thirst;
         public StatConfiguration happiness;
