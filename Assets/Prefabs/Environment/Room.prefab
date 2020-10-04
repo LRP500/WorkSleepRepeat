@@ -135,7 +135,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 10
+  m_Intensity: 12
   m_Range: 5
   m_SpotAngle: 169.37231
   m_InnerSpotAngle: 99.3723
@@ -3704,6 +3704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3039356863194115367}
   - component: {fileID: 6860145925788327949}
+  - component: {fileID: 2166576976504422076}
   m_Layer: 0
   m_Name: Distant Keyboard
   m_TagString: Untagged
@@ -3822,6 +3823,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2166576976504422076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5895896752030085628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57ceac6dd784b49458e30cc52e49ce16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ID: 1
 --- !u!1 &6625058004808787618
 GameObject:
   m_ObjectHideFlags: 0
@@ -4721,10 +4735,25 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5393865450485964784, guid: 2f48663b361b7fb409b8449f138244b4,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393865450485964784, guid: 2f48663b361b7fb409b8449f138244b4,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 6865670237445889779, guid: 2f48663b361b7fb409b8449f138244b4,
         type: 3}
       propertyPath: m_fontSizeBase
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865670237445889779, guid: 2f48663b361b7fb409b8449f138244b4,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 0.95
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f48663b361b7fb409b8449f138244b4, type: 3}
@@ -4900,6 +4929,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725922122933217269, guid: 801b61f83220b434da359dee362f6551,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5606869753974848723, guid: 801b61f83220b434da359dee362f6551,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.566
       objectReference: {fileID: 0}
     - target: {fileID: 6021011185865758116, guid: 801b61f83220b434da359dee362f6551,
         type: 3}

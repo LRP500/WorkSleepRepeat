@@ -11,6 +11,8 @@ namespace LD47
 
         ENV_Counter,
 
-        INT_Quit
+        INT_Quit,
+        INT_Bed,
+        INT_Desk
     }
 }

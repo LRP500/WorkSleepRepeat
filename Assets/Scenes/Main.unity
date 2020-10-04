@@ -2385,26 +2385,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 339507486}
-    - target: {fileID: 5344876363713745782, guid: b5c48361f319fcf48b28cd0112924e39,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5344876363713745782, guid: b5c48361f319fcf48b28cd0112924e39,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5344876363713745782, guid: b5c48361f319fcf48b28cd0112924e39,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5344876363713745782, guid: b5c48361f319fcf48b28cd0112924e39,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -0.4
-      objectReference: {fileID: 0}
     - target: {fileID: 5862180800467764157, guid: b5c48361f319fcf48b28cd0112924e39,
         type: 3}
       propertyPath: m_Mesh
@@ -2457,25 +2437,6 @@ PrefabInstance:
       objectReference: {fileID: 608954352}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5c48361f319fcf48b28cd0112924e39, type: 3}
---- !u!1 &2166576976504422075 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5895896752030085628, guid: b5c48361f319fcf48b28cd0112924e39,
-    type: 3}
-  m_PrefabInstance: {fileID: 2166576976504422074}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2166576976504422076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2166576976504422075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57ceac6dd784b49458e30cc52e49ce16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _ID: 1
 --- !u!1001 &2699222266451610763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2483,6 +2444,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1943101792}
     m_Modifications:
+    - target: {fileID: 2699222267117679698, guid: 5419287b9df001549a38f9be0dd67c44,
+        type: 3}
+      propertyPath: _fadeDuration
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2699222267117679709, guid: 5419287b9df001549a38f9be0dd67c44,
         type: 3}
       propertyPath: m_LocalPosition.x

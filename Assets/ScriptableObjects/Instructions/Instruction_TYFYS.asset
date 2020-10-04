@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 141db66ddf74ab641884b87dc9c734b6, type: 3}
   m_Name: Instruction_TYFYS
   m_EditorClassIdentifier: 
-  description: Thank You For Your Service
+  description: Thank You For Your Time
   requiredAction: {fileID: 0}
   completionAction: {fileID: 0}

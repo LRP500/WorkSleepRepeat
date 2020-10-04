@@ -29,6 +29,10 @@ MonoBehaviour:
     enabled: 0
   - ID: 4
     enabled: 1
+  - ID: 5
+    enabled: 0
+  - ID: 6
+    enabled: 0
   instructions:
   - {fileID: 11400000, guid: 078df9bd51fff2240a0a74c0179a6641, type: 2}
   thankYouForYourService: 0
