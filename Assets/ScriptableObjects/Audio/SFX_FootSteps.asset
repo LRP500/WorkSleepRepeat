@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _clips:
   - {fileID: 8300000, guid: f27f1a1d0865392489c51e40b7d4d5ba, type: 3}
-  _volume: {x: 0.27799267, y: 0.6619736}
+  _volume: {x: 0.54446554, y: 0.8497155}
   _pitch: {x: 1.3306172, y: 2}

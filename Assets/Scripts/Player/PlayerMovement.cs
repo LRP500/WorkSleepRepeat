@@ -45,7 +45,7 @@ namespace LD47
 
         private IEnumerator FootSteps()
         {
-            float interval = 0.7f;
+            float interval = 0.6f;
             float timer = 0.5f;
 
             while (true)
