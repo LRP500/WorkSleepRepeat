@@ -22,9 +22,7 @@ MonoBehaviour:
   happiness:
     value: 0
     enabled: 0
-  state:
-  - ID: 1
-    enabled: 1
+  state: []
   instructions:
   - {fileID: 11400000, guid: 3545b3fed14c16e4685d7c434964a1c9, type: 2}
   - {fileID: 11400000, guid: cc78a1675742c044f9f2c95853dfa21f, type: 2}

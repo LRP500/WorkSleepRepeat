@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subjectID: 2248
   hunger:
-    value: 56
+    value: 64.6
     enabled: 1
   thirst:
-    value: 23
+    value: 85.3
     enabled: 1
   happiness:
     value: 0
