@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sirenix.OdinInspector;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -8,6 +9,8 @@ namespace WorkSleepRepeat
     [CreateAssetMenu(menuName = "LD47/Configuration")]
     public class Configuration : ScriptableObject
     {
+        #region Nested Structures
+
         [Serializable]
         public struct StatConfiguration
         {
@@ -24,17 +27,21 @@ namespace WorkSleepRepeat
             public bool enabled;
         }
 
+        #endregion Nested Structures
+
         public int subjectID;
 
+        [FoldoutGroup("Player Stats")]
         public StatConfiguration hunger;
+
+        [FoldoutGroup("Player Stats")]
         public StatConfiguration thirst;
+
+        [FoldoutGroup("Player Stats")]
         public StatConfiguration happiness;
 
         public List<StateConfiguration> state = null;
         public List<Instruction> instructions = null;
-
-        // TEMP
-        public bool thankYouForYourService = false;
 
         public bool Contains(ConfigurableID ID)
         {
