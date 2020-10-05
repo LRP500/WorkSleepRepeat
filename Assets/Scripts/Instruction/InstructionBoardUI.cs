@@ -15,17 +15,12 @@ namespace LD47
 
         private void Awake()
         {
-            EventManager.Instance.Subscribe(GameplayEvent.InstructionCompleted, OnInstructionCompleted);
-        }
-
-        private void Start()
-        {
-            Refresh();
+            EventManager.Instance.Subscribe(GameplayEvent.InstructionsUpdated, OnInstructionCompleted);
         }
 
         private void OnDisable()
         {
-            EventManager.Instance.Unsubscribe(GameplayEvent.InstructionCompleted, OnInstructionCompleted);
+            EventManager.Instance.Unsubscribe(GameplayEvent.InstructionsUpdated, OnInstructionCompleted);
         }
 
         private void OnInstructionCompleted(object arg)
@@ -39,12 +34,12 @@ namespace LD47
 
             if (instruction == null)
             {
-                //_instructionText.gameObject.SetActive(false);
                 StartCoroutine(Repeat());
             }
             else
             {
                 StopAllCoroutines();
+                _instructionText.gameObject.SetActive(true);
                 _instructionText.text = _instructionManager.GetCurrentInstruction().description;
             }
         }

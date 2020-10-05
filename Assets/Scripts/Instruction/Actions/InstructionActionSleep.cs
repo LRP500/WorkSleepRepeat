@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 namespace LD47
 {
@@ -17,7 +18,14 @@ namespace LD47
         public override void Execute()
         {
             base.Execute();
-            CoroutineRunner.Instance.StartCoroutine(_cameraManager.TransitionTo(_transitionTo, _duration));
+            CoroutineRunner.Instance.StartCoroutine(Sleep());
+        }
+
+        public IEnumerator Sleep()
+        {
+            _cameraManager.TransitionTo(_transitionTo);
+            yield return new WaitForSeconds(_duration);
+            yield return GameplayManager.Instance.EndScene();
         }
     }
 }

@@ -12,6 +12,8 @@ namespace LD47
 
         private CinemachineVirtualCamera _currentCamera = null;
 
+        public override void Initialize() { }
+
         public override void Clear()
         {
             _currentCamera = null;

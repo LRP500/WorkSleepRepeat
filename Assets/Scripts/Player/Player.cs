@@ -10,7 +10,7 @@ namespace LD47
         public CinemachineVirtualCamera Camera => _camera;
 
         [SerializeField]
-        private GameObject _playerBody = null;
+        private GameObject _body = null;
 
         [SerializeField]
         private PlayerVariable _runtimeReference = null;
@@ -23,19 +23,19 @@ namespace LD47
             _runtimeReference.SetValue(this);
         }
 
-        private void Start()
+        private void OnEnable()
         {
             _cameraManager.TransitionTo(_camera);
         }
 
         public void Freeze()
         {
-            _playerBody.SetActive(false);
+            _body.SetActive(false);
         }
 
         public void UnFreeze()
         {
-            _playerBody.SetActive(true);
+            _body.SetActive(true);
         }
     }
 }
