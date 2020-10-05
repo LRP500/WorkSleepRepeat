@@ -1,7 +1,7 @@
 ﻿using Tools.Audio;
 using UnityEngine;
 
-namespace LD47
+namespace WorkSleepRepeat
 {
     [RequireComponent(typeof(AudioSource))]
     public class RegisterAudioSource : MonoBehaviour

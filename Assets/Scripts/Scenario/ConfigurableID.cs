@@ -1,5 +1,5 @@
 ﻿
-namespace LD47
+namespace WorkSleepRepeat
 {
     public enum ConfigurableID
     {

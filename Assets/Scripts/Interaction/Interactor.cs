@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace LD47
+namespace WorkSleepRepeat
 {
     [RequireComponent(typeof(Camera))]
     public class Interactor : MonoBehaviour

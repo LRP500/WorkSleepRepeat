@@ -1,9 +1,9 @@
 ﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static LD47.Configuration;
+using static WorkSleepRepeat.Configuration;
 
-namespace LD47
+namespace WorkSleepRepeat
 {
     public class StatGaugeUI : MonoBehaviour
     {

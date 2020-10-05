@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace LD47
+namespace WorkSleepRepeat
 {
     [CreateAssetMenu(menuName = "LD47/Managers/Configuration Manager")]
     public class ConfigurationManager : ScriptableManager

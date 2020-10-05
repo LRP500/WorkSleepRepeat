@@ -1,6 +1,6 @@
 ﻿using Tools;
 
-namespace LD47
+namespace WorkSleepRepeat
 {
     public class CoroutineRunner : Singleton<CoroutineRunner>
     {

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Sirenix.OdinInspector;
+using System.Collections.Generic;
 using UnityEngine;
 
 #pragma warning disable 0414
@@ -6,13 +7,13 @@ using UnityEngine;
 namespace Tools.Navigation
 {
     [CreateAssetMenu(menuName = "Tools/Navigation/Game Screen")]
-    public class GameScreen : ScriptableObject
+    public class GameScreen : SerializedScriptableObject
     {
         [SerializeField]
-        private List<SceneReference> _scenes = null;
-        public List<SceneReference> Scenes => _scenes;
+        private HashSet<SceneReference> _scenes = null;
+        public HashSet<SceneReference> Scenes => _scenes;
 
         [SerializeField]
-        private List<SceneReference> _dependencies = null;
+        private HashSet<SceneReference> _dependencies = null;
     }
 }

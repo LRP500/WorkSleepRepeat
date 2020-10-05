@@ -2,7 +2,7 @@
 using Tools.UI;
 using UnityEngine;
 
-namespace LD47
+namespace WorkSleepRepeat
 {
     public class SceneFader : MonoBehaviour
     {

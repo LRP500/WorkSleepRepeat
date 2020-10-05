@@ -2,7 +2,7 @@
 using Tools.Variables;
 using UnityEngine;
 
-namespace LD47
+namespace WorkSleepRepeat
 {
     [CreateAssetMenu(menuName = "LD47/Variables/Virtual Camera")]
     public class VirtualCameraVariable : Variable<CinemachineVirtualCamera>

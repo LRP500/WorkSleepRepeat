@@ -1,7 +1,7 @@
 ﻿using Cinemachine;
 using UnityEngine;
 
-namespace LD47
+namespace WorkSleepRepeat
 {
     [RequireComponent(typeof(CinemachineVirtualCamera))]
     public class VirtualCameraVariableSetter : MonoBehaviour

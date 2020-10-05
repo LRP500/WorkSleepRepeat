@@ -2,7 +2,7 @@
 using Tools;
 using UnityEngine;
 
-namespace LD47
+namespace WorkSleepRepeat
 {
     public class GameplayManager : Singleton<GameplayManager>
     {

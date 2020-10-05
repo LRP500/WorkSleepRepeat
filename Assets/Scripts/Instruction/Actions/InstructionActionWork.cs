@@ -2,7 +2,7 @@
 using Tools.Audio;
 using UnityEngine;
 
-namespace LD47
+namespace WorkSleepRepeat
 {
     [CreateAssetMenu(menuName = "LD47/Actions/Instruction Actions/Work")]
     public class InstructionActionWork : InstructionAction

@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-namespace LD47
+namespace WorkSleepRepeat
 {
     public abstract class ScriptableManager : ScriptableObject
     {

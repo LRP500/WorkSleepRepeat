@@ -2,7 +2,7 @@
 using Tools.Audio;
 using UnityEngine;
 
-namespace LD47
+namespace WorkSleepRepeat
 {
     public class PlayerMovement : MonoBehaviour
     {

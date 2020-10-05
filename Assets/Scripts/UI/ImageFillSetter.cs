@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace LD47
+namespace WorkSleepRepeat
 {
     public class ImageFillSetter : MonoBehaviour
     {

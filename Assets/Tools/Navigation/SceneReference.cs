@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿using Sirenix.OdinInspector;
+using UnityEditor;
 using UnityEngine;
 
 namespace Tools.Navigation
@@ -7,21 +8,18 @@ namespace Tools.Navigation
     public class SceneReference : ScriptableObject
     {
 #if UNITY_EDITOR
-        //[OnValueChanged("Refresh")]
+        [OnValueChanged("Refresh")]
         public SceneAsset asset;
 #endif
-        //[DisplayAsString]
+        [DisplayAsString]
         public new string name;
 
-        //[DisplayAsString]
+        [DisplayAsString]
         public string path;
 
 #if UNITY_EDITOR
+        [Button]
         private void Refresh()
-        {
-        }
-
-        private void OnValidate()
         {
             name = asset.name;
             path = AssetDatabase.GetAssetPath(asset);

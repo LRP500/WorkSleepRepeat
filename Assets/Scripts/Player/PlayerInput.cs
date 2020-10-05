@@ -1,7 +1,7 @@
 ﻿using Tools.Variables;
 using UnityEngine;
 
-namespace LD47
+namespace WorkSleepRepeat
 {
     public class PlayerInput : MonoBehaviour
     {

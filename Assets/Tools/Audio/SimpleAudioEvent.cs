@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using NaughtyAttributes;
+﻿using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
 
@@ -10,10 +9,10 @@ namespace Tools.Audio
     {
         public AudioClip[] _clips;
 
-        [MinMaxSlider(0, 1)]
+        [MinMaxSlider(0, 1, ShowFields = true)]
         public Vector2 _volume =  Vector2.one;
 
-        [MinMaxSlider(0, 2)]
+        [MinMaxSlider(0, 2, ShowFields = true)]
         public Vector2 _pitch = Vector2.one;
 
         private AudioSource _previewer;

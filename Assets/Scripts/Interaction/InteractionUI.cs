@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace LD47
+namespace WorkSleepRepeat
 {
     public class InteractionUI : MonoBehaviour
     {

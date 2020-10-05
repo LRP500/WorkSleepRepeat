@@ -2,7 +2,7 @@
 using Tools;
 using UnityEngine;
 
-namespace LD47
+namespace WorkSleepRepeat
 {
     [CreateAssetMenu(menuName = "LD47/Managers/Instruction Manager")]
     public class InstructionManager : ScriptableManager

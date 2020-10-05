@@ -1,7 +1,7 @@
 ﻿using Tools.Variables;
 using UnityEngine;
 
-namespace LD47
+namespace WorkSleepRepeat
 {
     [CreateAssetMenu(menuName = "LD47/Variables/Player")]
     public class PlayerVariable : Variable<Player>
