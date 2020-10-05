@@ -7,10 +7,12 @@ namespace WorkSleepRepeat
         [SerializeField]
         private ConfigurableID _ID = ConfigurableID.None;
 
+        [SerializeField]
+        private bool _enabledByDefault = false;
+
         private void Awake()
         {
-            // Disabled by default
-            gameObject.SetActive(false);
+            gameObject.SetActive(_enabledByDefault);
         }
 
         public override void Configure(Configuration configuration)

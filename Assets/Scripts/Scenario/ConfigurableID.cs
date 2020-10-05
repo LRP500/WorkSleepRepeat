@@ -8,11 +8,10 @@ namespace WorkSleepRepeat
         SFX_FarAwayKeyboard,
 
         UI_PlayerStats,
-
-        ENV_Counter,
+        UI_MonitorScreen,
 
         INT_Quit,
-        INT_Bed,
-        INT_Desk
+        INT_Sleep,
+        INT_Work
     }
 }

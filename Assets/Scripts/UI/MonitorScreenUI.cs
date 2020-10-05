@@ -3,15 +3,16 @@ using UnityEngine;
 
 namespace WorkSleepRepeat
 {
-    public class RunCounterUI : EnableConfigurable
+    public class MonitorScreenUI : EnableConfigurable
     {
         [SerializeField]
-        private TextMeshProUGUI _counter = null;
+        private TextMeshProUGUI _subjectID = null;
 
         public override void Configure(Configuration configuration)
         {
             base.Configure(configuration);
-            _counter.text = $"Subject ID: #{configuration.subjectID.ToString("0000")}";
+
+            _subjectID.text = $"Subject ID: #{configuration.subjectID.ToString("0000")}";
         }
     }
 }
