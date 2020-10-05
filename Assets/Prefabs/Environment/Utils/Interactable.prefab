@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _label: QUIT
-  _range: 10
+  _range: 2
   _canBeInteractedWith: 1
   _action: {fileID: 11400000, guid: e95d0797dfb42d7479cf105e7c2bc895, type: 2}
 --- !u!65 &3714739278035198438
