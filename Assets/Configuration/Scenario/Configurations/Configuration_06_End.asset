@@ -17,14 +17,12 @@ MonoBehaviour:
     value: 0
     enabled: 1
   thirst:
-    value: 85.3
+    value: 0
     enabled: 1
   happiness:
     value: 0
     enabled: 0
   state:
-  - ID: 1
-    enabled: 0
   - ID: 2
     enabled: 0
   - ID: 4
@@ -35,4 +33,3 @@ MonoBehaviour:
     enabled: 0
   instructions:
   - {fileID: 11400000, guid: 078df9bd51fff2240a0a74c0179a6641, type: 2}
-  thankYouForYourService: 0

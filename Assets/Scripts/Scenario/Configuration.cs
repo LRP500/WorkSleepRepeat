@@ -1,5 +1,4 @@
-﻿using Sirenix.OdinInspector;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -31,13 +30,8 @@ namespace WorkSleepRepeat
 
         public int subjectID;
 
-        [FoldoutGroup("Player Stats")]
         public StatConfiguration hunger;
-
-        [FoldoutGroup("Player Stats")]
         public StatConfiguration thirst;
-
-        [FoldoutGroup("Player Stats")]
         public StatConfiguration happiness;
 
         public List<StateConfiguration> state = null;

@@ -15,16 +15,14 @@ MonoBehaviour:
   subjectID: 27
   hunger:
     value: 100
-    enabled: 0
+    enabled: 1
   thirst:
     value: 100
-    enabled: 0
+    enabled: 1
   happiness:
     value: 0
     enabled: 0
   state:
-  - ID: 3
-    enabled: 1
   - ID: 5
     enabled: 1
   - ID: 6
@@ -32,4 +30,3 @@ MonoBehaviour:
   instructions:
   - {fileID: 11400000, guid: 3545b3fed14c16e4685d7c434964a1c9, type: 2}
   - {fileID: 11400000, guid: cc78a1675742c044f9f2c95853dfa21f, type: 2}
-  thankYouForYourService: 0
