@@ -33,6 +33,9 @@ namespace LD47
         public List<StateConfiguration> state = null;
         public List<Instruction> instructions = null;
 
+        // TEMP
+        public bool thankYouForYourService = false;
+
         public bool Contains(ConfigurableID ID)
         {
             return state.Any(x => x.ID == ID);
