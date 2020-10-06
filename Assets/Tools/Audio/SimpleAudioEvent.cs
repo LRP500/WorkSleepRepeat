@@ -33,7 +33,11 @@ namespace Tools.Audio
             source.clip = _clips[Random.Range(0, _clips.Length)];
             source.volume = Random.Range(_volume.x, _volume.y);
             source.pitch = Random.Range(_pitch.x, _pitch.y);
-            source.Play();
+
+            if (source.isActiveAndEnabled)
+            {
+                source.Play();
+            }
         }
 
         [Button]

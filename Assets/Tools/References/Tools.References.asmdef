@@ -1,0 +1,15 @@
+{
+    "name": "Tools.References",
+    "references": [
+        "GUID:8867261c5607f6444be9d27de96aff2d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

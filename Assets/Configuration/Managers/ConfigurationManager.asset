@@ -19,3 +19,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6e2ef369377334f4dbffd4ec698b7037, type: 2}
   - {fileID: 11400000, guid: a4aa2c4128282c84fb085fa8364e4fff, type: 2}
   - {fileID: 11400000, guid: 40c817f06cfefd74fb5e10c709e5f19d, type: 2}
+  _debugMode: 1
+  _debugConfigurations:
+  - {fileID: 11400000, guid: a408f038570d9f340971cad013235e09, type: 2}

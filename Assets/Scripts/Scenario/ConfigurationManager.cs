@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Sirenix.OdinInspector;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -9,6 +10,17 @@ namespace WorkSleepRepeat
     {
         [SerializeField]
         private List<Configuration> _configurations = null;
+
+#if UNITY_EDITOR
+        [SerializeField]
+        [BoxGroup("Debug")]
+        private bool _debugMode = false;
+
+        [SerializeField]
+        [BoxGroup("Debug")]
+        [ShowIf(nameof(_debugMode))]
+        private List<Configuration> _debugConfigurations = null;
+#endif
 
         private List<Configurable> _configurables = null;
 
@@ -26,6 +38,13 @@ namespace WorkSleepRepeat
             {
                 return null;
             }
+
+#if UNITY_EDITOR
+            if (_debugMode)
+            {
+                return _debugConfigurations[_currentConfigurationIndex];
+            }
+#endif
 
             return _configurations[_currentConfigurationIndex];
         }

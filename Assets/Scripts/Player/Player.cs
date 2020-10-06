@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace WorkSleepRepeat
 {
-    public class Player : MonoBehaviour
+    public class Player : Configurable
     {
         [SerializeField]
         private CinemachineVirtualCamera _camera = null;
@@ -36,6 +36,10 @@ namespace WorkSleepRepeat
         public void UnFreeze()
         {
             _body.SetActive(true);
+        }
+
+        public override void Configure(Configuration configuration)
+        {
         }
     }
 }
