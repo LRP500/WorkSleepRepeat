@@ -13,11 +13,9 @@ namespace WorkSleepRepeat
 
 #if UNITY_EDITOR
         [SerializeField]
-        [BoxGroup("Debug")]
         private bool _debugMode = false;
 
         [SerializeField]
-        [BoxGroup("Debug")]
         [ShowIf(nameof(_debugMode))]
         private List<Configuration> _debugConfigurations = null;
 #endif
