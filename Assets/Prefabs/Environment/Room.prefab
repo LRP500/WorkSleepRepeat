@@ -55,7 +55,7 @@ Light:
     m_Strength: 1
     m_Bias: 1
     m_NormalBias: 1
-    m_NearPlane: 2.7
+    m_NearPlane: 2
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -4970,6 +4970,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1482472766950042532, guid: b02e9ac690271c241aae9af5e5ba09bd,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 8400000, guid: 48317fd1ccb237446b8a266a79ae92f0, type: 2}
     - target: {fileID: 5670937789639329086, guid: b02e9ac690271c241aae9af5e5ba09bd,
         type: 3}
       propertyPath: m_Name
@@ -5045,6 +5050,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1482472766950042532, guid: b02e9ac690271c241aae9af5e5ba09bd,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 8400000, guid: 48317fd1ccb237446b8a266a79ae92f0, type: 2}
     - target: {fileID: 5670937789639329086, guid: b02e9ac690271c241aae9af5e5ba09bd,
         type: 3}
       propertyPath: m_Name
@@ -5120,6 +5130,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1482472766950042532, guid: b02e9ac690271c241aae9af5e5ba09bd,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: 01301eda47311914eb383a2fb9462eb1, type: 2}
     - target: {fileID: 5670937789639329086, guid: b02e9ac690271c241aae9af5e5ba09bd,
         type: 3}
       propertyPath: m_Name
@@ -5195,6 +5210,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1482472766950042532, guid: b02e9ac690271c241aae9af5e5ba09bd,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 8400000, guid: 48317fd1ccb237446b8a266a79ae92f0, type: 2}
     - target: {fileID: 5670937789639329086, guid: b02e9ac690271c241aae9af5e5ba09bd,
         type: 3}
       propertyPath: m_Name
