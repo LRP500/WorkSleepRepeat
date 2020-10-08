@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace WorkSleepRepeat
 {
-[CreateAssetMenu(menuName = "LD47/Managers/Camera Manager")]
+    [CreateAssetMenu(menuName = "LD47/Managers/Camera Manager")]
     public class CameraManager : ScriptableManager
     {
         [SerializeField]
@@ -12,7 +12,9 @@ namespace WorkSleepRepeat
 
         private CinemachineVirtualCamera _currentCamera = null;
 
-        public override void Initialize() { }
+        public override void Initialize()
+        {
+        }
 
         public override void Clear()
         {
