@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a3488bc2f1386640bdc4844181f7499, type: 3}
-  m_Name: CameraManager
+  m_Script: {fileID: 11500000, guid: f75bcf48798fe87489701467d53d91ec, type: 3}
+  m_Name: SecurityCameras
   m_EditorClassIdentifier: 
-  _player: {fileID: 11400000, guid: d695787df0d86aa41ac301a0397a0656, type: 2}
-  _securityCameras: {fileID: 11400000, guid: 75f16b2067462f044a1cc6f02e8ab299, type: 2}
+  _items: []

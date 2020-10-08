@@ -9,6 +9,8 @@ namespace Tools.Collections
         private List<T> _items = null;
         public List<T> Items => _items;
 
+        public int Count => Items.Count;
+
         public T this[int index]
         {
             get { return _items[index]; }

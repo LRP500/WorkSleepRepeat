@@ -682,7 +682,7 @@ GameObject:
   - component: {fileID: 7477084280857161433}
   m_Layer: 0
   m_Name: SecurityCamera
-  m_TagString: MainCamera
+  m_TagString: SecurityCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -27,12 +27,12 @@ namespace WorkSleepRepeat
         public override void Execute()
         {
             base.Execute();
-            CoroutineRunner.Instance.StartCoroutine(Work());
+            CoroutineRunner.Current.StartCoroutine(Work());
         }
 
         public IEnumerator Work()
         {
-            CoroutineRunner.Instance.StartCoroutine(_cameraManager.TransitionTo(_transitionTo, _duration));
+            CoroutineRunner.Current.StartCoroutine(_cameraManager.TransitionTo(_transitionTo, _duration));
             yield return new WaitForSeconds(1f);
             _audioEvent?.Play(_audioSource);
         }

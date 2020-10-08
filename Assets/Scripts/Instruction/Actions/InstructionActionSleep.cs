@@ -18,14 +18,14 @@ namespace WorkSleepRepeat
         public override void Execute()
         {
             base.Execute();
-            CoroutineRunner.Instance.StartCoroutine(Sleep());
+            CoroutineRunner.Current.StartCoroutine(Sleep());
         }
 
         public IEnumerator Sleep()
         {
             _cameraManager.TransitionTo(_transitionTo);
             yield return new WaitForSeconds(_duration);
-            yield return GameplayManager.Instance.EndScene();
+            yield return GameplayManager.Current.EndScene();
         }
     }
 }

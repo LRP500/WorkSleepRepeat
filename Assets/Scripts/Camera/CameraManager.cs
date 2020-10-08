@@ -1,5 +1,6 @@
 ﻿using Cinemachine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace WorkSleepRepeat
@@ -10,15 +11,37 @@ namespace WorkSleepRepeat
         [SerializeField]
         private PlayerVariable _player = null;
 
+        private List<Camera> _securityCameras = null;
+
         private CinemachineVirtualCamera _currentCamera = null;
 
         public override void Initialize()
         {
+            FindSecurityCameras();
+            CoroutineRunner.Current.StartCoroutine(UpdateSecurityCameras());
         }
 
         public override void Clear()
         {
             _currentCamera = null;
+            Debug.Log(_securityCameras.Count);
+        }
+
+        public void FindSecurityCameras()
+        {
+            GameObject[] results = GameObject.FindGameObjectsWithTag("SecurityCamera");
+
+            _securityCameras = new List<Camera>();
+            foreach (GameObject item in results)
+            {
+                Camera camera = item.GetComponent<Camera>();
+
+                if (camera)
+                {
+                    camera.enabled = false;
+                    _securityCameras.Add(item.GetComponent<Camera>());
+                }
+            }
         }
 
         public void TransitionTo(CinemachineVirtualCamera nextCamera)
@@ -57,6 +80,18 @@ namespace WorkSleepRepeat
             TransitionTo(camera);
             yield return new WaitForSeconds(duration);
             TransitionTo(previous);
+        }
+
+        private IEnumerator UpdateSecurityCameras()
+        {
+            while (true)
+            {
+                for (int i = 0; i < _securityCameras.Count; i++)
+                {
+                    _securityCameras[i].Render();
+                    yield return null;
+                }
+            }
         }
     }
 }

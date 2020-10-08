@@ -3,17 +3,20 @@ using UnityEngine;
 
 namespace Tools.Cinematics
 {
+    [RequireComponent(typeof(Camera))]
     public class RegisterCamera : MonoBehaviour
     {
-        [SerializeField]
-        private Camera _camera = null;
-
         [SerializeField]
         private CameraVariable _cameraVariable = null;
 
         private void Awake()
         {
-            _cameraVariable.SetValue(_camera);
+            _cameraVariable?.SetValue(GetComponent<Camera>());
+        }
+
+        private void OnDestroy()
+        {
+            _cameraVariable?.Clear();
         }
     }
 }
