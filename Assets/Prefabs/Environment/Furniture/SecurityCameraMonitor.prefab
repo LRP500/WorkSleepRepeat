@@ -108,6 +108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1471565276060369996}
+  - component: {fileID: 8770378456963304223}
   m_Layer: 0
   m_Name: SecurityCameraMonitor
   m_TagString: Untagged
@@ -131,6 +132,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8770378456963304223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5670937789639329086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80921785b89916429dd9e2ee1cb3acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _screenImage: {fileID: 1482472766950042532}
 --- !u!1 &7741096394326645862
 GameObject:
   m_ObjectHideFlags: 0

@@ -24,7 +24,6 @@ namespace WorkSleepRepeat
         public override void Clear()
         {
             _currentCamera = null;
-            Debug.Log(_securityCameras.Count);
         }
 
         public void FindSecurityCameras()
@@ -84,6 +83,11 @@ namespace WorkSleepRepeat
 
         private IEnumerator UpdateSecurityCameras()
         {
+            if (_securityCameras.Count == 0)
+            {
+                yield break;
+            }
+
             while (true)
             {
                 for (int i = 0; i < _securityCameras.Count; i++)

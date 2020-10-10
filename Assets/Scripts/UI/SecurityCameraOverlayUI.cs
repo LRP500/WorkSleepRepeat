@@ -7,9 +7,6 @@ namespace WorkSleepRepeat
     public class SecurityCameraOverlayUI : MonoBehaviour
     {
         [SerializeField]
-        private int _camID = 1;
-
-        [SerializeField]
         private TextMeshProUGUI _IDDisplay = null;
 
         [SerializeField]
@@ -17,7 +14,7 @@ namespace WorkSleepRepeat
 
         private void Awake()
         {
-            _IDDisplay.text = $"Cam {_camID}";
+            _IDDisplay.text = $"Cam 1";
         }
 
         private void Update()
